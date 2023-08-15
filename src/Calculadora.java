@@ -12,6 +12,15 @@ public class Calculadora {
         char operacion = lector.next().charAt(0);
 
         switch (operacion) {
+            case 'p':
+                int potencia1 = numero1 * numero2;
+                int potencia2 = numero2 * numero2;
+                System.out.print("La primera potencia es: " + potencia1 + "La segunda potencia es: " + potencia2);
+                break;
+            case 'm':
+                int modulo = numero1 % numero2;
+                System.out.print("el modulo es: " + modulo);
+                break;
             case '+' :
                 // Operación suma:
                 int suma = numero1 + numero2;
